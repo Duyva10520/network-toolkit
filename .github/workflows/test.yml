@@ -36,7 +36,7 @@ jobs:
       run: python setup.py
     
     - name: Test import
-      run: python -c "import network_toolkit; print('✅ Import successful')"
+      run: python -c "import network_toolkit; print('[OK] Import successful')"
     
     - name: Test basic functionality (Linux/macOS)
       if: runner.os != 'Windows'
@@ -45,7 +45,7 @@ jobs:
         import sys
         import signal
         def timeout_handler(signum, frame):
-            print('⏰ Test timeout (expected)')
+            print('[TIMEOUT] Test timeout (expected)')
             sys.exit(0)
         signal.signal(signal.SIGALRM, timeout_handler)
         signal.alarm(30)
@@ -56,9 +56,9 @@ jobs:
             toolkit.check_dns(['google.com'])
             print('Testing local info...')
             toolkit.get_local_info()
-            print('✅ Basic tests passed')
+            print('[OK] Basic tests passed')
         except Exception as e:
-            print(f'⚠️ Test completed with: {e}')
+            print(f'[WARNING] Test completed with: {e}')
         finally:
             signal.alarm(0)
         "
@@ -75,9 +75,9 @@ jobs:
             toolkit.check_dns(['google.com'])
             print('Testing local info...')
             toolkit.get_local_info()
-            print('✅ Basic tests passed')
+            print('[OK] Basic tests passed')
         except Exception as e:
-            print(f'⚠️ Test completed with: {e}')
+            print(f'[WARNING] Test completed with: {e}')
         "
     
     - name: Test CSV export
@@ -89,9 +89,9 @@ jobs:
             toolkit = NetworkToolkit()
             toolkit.get_local_info()
             result = toolkit.logger.export_csv('test_export.csv', 'basic')
-            print('✅ CSV export test passed' if result else '❌ CSV export failed')
+            print('[OK] CSV export test passed' if result else '[FAIL] CSV export failed')
         except Exception as e:
-            print(f'⚠️ CSV export test: {e}')
+            print(f'[WARNING] CSV export test: {e}')
         "
     
     - name: Test HTML export
@@ -103,9 +103,9 @@ jobs:
             toolkit = NetworkToolkit()
             toolkit.get_local_info()
             result = toolkit.logger.export_html('test_report.html', 'summary')
-            print('✅ HTML export test passed' if result else '❌ HTML export failed')
+            print('[OK] HTML export test passed' if result else '[FAIL] HTML export failed')
         except Exception as e:
-            print(f'⚠️ HTML export test: {e}')
+            print(f'[WARNING] HTML export test: {e}')
         "
 
   lint:
