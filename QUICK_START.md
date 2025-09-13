@@ -43,7 +43,7 @@ python network_toolkit.py
 ### Troubleshooting Issues
 ```bash
 python network_toolkit.py
-# Choose: 3 (Advanced Test) - 5 minutes
+# Choose: 3 (Advanced Test) - 7 minutes
 # Then: 12 (Export HTML) for detailed report
 ```
 
@@ -124,7 +124,7 @@ python network_toolkit.py
 🚀 QUICK TESTS:
 1. Quick Test (30s)    - Basic connectivity
 2. Full Test (2min)    - Comprehensive check  
-3. Advanced Test (5min) - Deep diagnostics
+3. Advanced Test (7min) - Deep diagnostics (includes traceroute)
 
 🔧 INDIVIDUAL TESTS:
 4. DNS Test           - Domain resolution

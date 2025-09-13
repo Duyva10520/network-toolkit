@@ -12,6 +12,9 @@ network-toolkit/
 │   └── sample_report.html       # HTML report example
 ├── 📚 Documentation
 │   ├── README.md               # Main documentation
+│   ├── FEATURES.md             # Detailed feature list
+│   ├── QUICK_START.md          # 30-second setup guide
+│   ├── PROJECT_OVERVIEW.md     # Comprehensive overview
 │   ├── CHANGELOG.md            # Version history
 │   ├── CONTRIBUTING.md         # Contribution guidelines
 │   ├── CONTRIBUTORS.md         # Contributors list
@@ -20,7 +23,9 @@ network-toolkit/
 │   ├── setup.py               # Setup script
 │   ├── git_setup.py           # Git repository setup
 │   ├── build_executable.py    # Build executable
-│   └── LICENSE                 # MIT License
+│   ├── VERSION                # Version tracking
+│   ├── COMMIT_MESSAGE.md      # Commit templates
+│   └── LICENSE                # MIT License
 ├── 🔧 Development
 │   ├── .gitignore             # Git ignore rules
 │   ├── .github/workflows/     # GitHub Actions CI/CD
@@ -95,8 +100,8 @@ python git_setup.py
 2. **Full Test** (7 tests, ~2 phút):
    - ✅ Tất cả Quick Test + Port Scan + Network Stats
    
-3. **Advanced Test** (5 tests, ~5 phút):
-   - ✅ LAN Scan, Port Range Scan, Bandwidth, Stats, Traceroute
+3. **Advanced Test** (5 tests, ~7 phút):
+   - ✅ LAN Scan, Port Range Scan, Bandwidth, Stats, Traceroute (2-min timeout)
 
 ### 🔧 KIỂM TRA RIÊNG LẺ:
 - 🌐 **DNS Test**: Kiểm tra phân giải tên miền (tùy chọn domains)
@@ -164,7 +169,7 @@ python network_toolkit.py
 
 ## 🔧 Yêu cầu hệ thống
 
-- Python 3.6+
+- Python 3.7+
 - Windows/Linux/macOS
 - Không cần cài đặt thêm package (100% standard library)
 

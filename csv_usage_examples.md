@@ -1,6 +1,8 @@
 # CSV Export Usage Examples
 
-## 📊 Cách sử dụng CSV files từ Network Toolkit
+## 📊 Cách sử dụng CSV files từ Network Toolkit v1.0.0
+
+Network Toolkit cung cấp 5 loại CSV export với khả năng filtering mạnh mẽ.
 
 ### 🎯 Mục đích
 CSV files giúp bạn:

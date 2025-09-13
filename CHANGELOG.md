@@ -6,7 +6,7 @@ All notable changes to Network Toolkit will be documented in this file.
 
 ### Added
 - 🌟 **All-in-one Network Toolkit** - Hợp nhất tất cả tính năng vào một file duy nhất
-- 🚀 **3 Test Modes**: Quick Test (30s), Full Test (2 phút), Advanced Test (5 phút)
+- 🚀 **3 Test Modes**: Quick Test (30s), Full Test (2 phút), Advanced Test (7 phút)
 - 🔧 **10 Individual Tests**: DNS, Ping, Port Scan, Network Scan, Bandwidth, Traceroute, etc.
 - 📊 **Smart CSV Export**: 5 loại export với custom filtering
 - 🌐 **Beautiful HTML Reports**: Dashboard-style reports với modern UI
@@ -60,7 +60,7 @@ network-toolkit/
 ```
 
 ### Compatibility
-- Python 3.6+
+- Python 3.7+
 - Windows 10/11
 - Linux (Ubuntu, CentOS, etc.)
 - macOS 10.14+
@@ -68,6 +68,6 @@ network-toolkit/
 ### Performance
 - Quick Test: ~30 seconds
 - Full Test: ~2 minutes
-- Advanced Test: ~5 minutes
+- Advanced Test: ~7 minutes (includes 2-minute traceroute)
 - Memory usage: <50MB
 - CPU usage: Low impact

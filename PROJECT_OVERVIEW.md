@@ -8,7 +8,7 @@
 
 ### Core Functionality
 - **14 Interactive Options**: Từ quick test đến advanced diagnostics
-- **3 Test Modes**: Quick (30s), Full (2 phút), Advanced (5 phút)
+- **3 Test Modes**: Quick (30s), Full (2 phút), Advanced (7 phút)
 - **10 Individual Tests**: DNS, Ping, Port Scan, Network Scan, Bandwidth, etc.
 - **Zero Dependencies**: 100% Python standard library
 - **Cross-platform**: Windows, Linux, macOS
@@ -57,7 +57,7 @@ NetworkToolkit:
 - **File Size**: ~100KB source, ~15MB executable
 
 ### Compatibility
-- **Python**: 3.6+
+- **Python**: 3.7+
 - **OS**: Windows 10+, Linux, macOS 10.14+
 - **Architecture**: x86, x64, ARM (Python supported)
 - **Dependencies**: None (standard library only)
@@ -99,7 +99,7 @@ Generated Files:
 ### Test Coverage
 - **Quick Test**: 5 tests, ~30 seconds
 - **Full Test**: 7 tests, ~2 minutes  
-- **Advanced Test**: 5 tests, ~5 minutes
+- **Advanced Test**: 5 tests, ~7 minutes (includes 2-minute traceroute)
 - **Individual Tests**: 10 customizable options
 
 ### Export Formats

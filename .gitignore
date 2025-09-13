@@ -133,7 +133,14 @@ network_toolkit_logs_*.json
 network_toolkit_results_*.json
 network_toolkit_export_*.csv
 network_toolkit_report_*.html
+test_export.csv
+test_report.html
 *.log
+
+# Build artifacts
+dist/
+build/
+*.spec
 
 # IDE files
 .vscode/

@@ -201,11 +201,11 @@ def create_package():
 - `sample_report.html` - Example HTML report
 
 ## 🌐 Features:
-- 14 network testing options
-- Beautiful HTML reports
-- CSV export with filtering
-- Cross-platform support
-- Zero dependencies
+- 14 network testing options (3 test modes + 10 individual tests + utilities)
+- Beautiful HTML reports with dashboard
+- Smart CSV export with 5 types and filtering
+- Cross-platform support (Windows/Linux/macOS)
+- Zero dependencies (100% Python standard library)
 
 ## 📞 Support:
 - GitHub: https://github.com/yourusername/network-toolkit
