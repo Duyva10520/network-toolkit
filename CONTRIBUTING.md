@@ -33,7 +33,7 @@ Chúng tôi rất hoan nghênh các đóng góp cho Network Toolkit! 🎉
 ### Testing
 - Test trên Windows, Linux, macOS nếu có thể
 - Đảm bảo không break existing functionality
-- Test với Python 3.7+
+- Test với Python 3.8+
 
 ### Documentation
 - Cập nhật README.md nếu cần

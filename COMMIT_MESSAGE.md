@@ -63,14 +63,14 @@ Fix GitHub Actions CI/CD pipeline compatibility issues
 - Users on Python 3.6 need to upgrade
 
 ## Migration Guide
-For users on Python 3.6:
+For users on Python 3.7 or older:
 ```bash
 # Check current version
 python --version
 
 # Upgrade Python (Ubuntu/Debian)
 sudo apt update
-sudo apt install python3.7
+sudo apt install python3.8
 
 # Upgrade Python (Windows)
 # Download from python.org
@@ -90,5 +90,5 @@ git commit -m "fix(ci): update GitHub Actions for Python 3.7+ compatibility
 - Update minimum Python requirement to 3.7+
 - Improve cross-platform test compatibility
 
-BREAKING CHANGE: Minimum Python version is now 3.7+"
+BREAKING CHANGE: Minimum Python version is now 3.8+"
 ```

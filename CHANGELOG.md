@@ -60,7 +60,7 @@ network-toolkit/
 ```
 
 ### Compatibility
-- Python 3.7+
+- Python 3.8+
 - Windows 10/11
 - Linux (Ubuntu, CentOS, etc.)
 - macOS 10.14+

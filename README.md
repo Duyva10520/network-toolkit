@@ -169,7 +169,7 @@ python network_toolkit.py
 
 ## 🔧 Yêu cầu hệ thống
 
-- Python 3.7+
+- Python 3.8+
 - Windows/Linux/macOS
 - Không cần cài đặt thêm package (100% standard library)
 

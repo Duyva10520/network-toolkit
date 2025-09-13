@@ -57,7 +57,7 @@ NetworkToolkit:
 - **File Size**: ~100KB source, ~15MB executable
 
 ### Compatibility
-- **Python**: 3.7+
+- **Python**: 3.8+
 - **OS**: Windows 10+, Linux, macOS 10.14+
 - **Architecture**: x86, x64, ARM (Python supported)
 - **Dependencies**: None (standard library only)

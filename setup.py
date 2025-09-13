@@ -12,8 +12,8 @@ def check_requirements():
     
     # Check Python version
     python_version = sys.version_info
-    if python_version < (3, 7):
-        print("❌ Python 3.7+ is required")
+    if python_version < (3, 8):
+        print("❌ Python 3.8+ is required")
         print(f"   Current version: {python_version.major}.{python_version.minor}")
         return False
     else:

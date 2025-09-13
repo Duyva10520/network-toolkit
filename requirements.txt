@@ -1,6 +1,6 @@
 # Network Toolkit v1.0.0 - No External Dependencies Required
 # 
-# Minimum Python version: 3.7+
+# Minimum Python version: 3.8+
 # This project uses 100% Python standard library modules:
 # - socket (network operations)
 # - subprocess (system commands)

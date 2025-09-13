@@ -3,7 +3,7 @@
 ## 🎯 System Requirements
 
 ### Minimum Requirements
-- **Python**: 3.7 or higher
+- **Python**: 3.8 or higher
 - **Operating System**: Windows 10+, Linux, macOS 10.14+
 - **Memory**: 50MB RAM
 - **Storage**: 10MB free space
@@ -23,7 +23,7 @@ git clone https://github.com/yourusername/network-toolkit.git
 cd network-toolkit
 
 # Verify Python version
-python --version  # Should be 3.7+
+python --version  # Should be 3.8+
 
 # Run setup check
 python setup.py
@@ -168,7 +168,7 @@ python3 network_toolkit.py
 ### 1. Python Version Check
 ```bash
 python --version
-# Should output: Python 3.7.x or higher
+# Should output: Python 3.8.x or higher
 ```
 
 ### 2. Dependencies Check
@@ -213,7 +213,7 @@ chmod +x network_toolkit.py
 #### "Module not found"
 **Solution:**
 - All modules are standard library
-- Check Python version (must be 3.7+)
+- Check Python version (must be 3.8+)
 - Try: `python -c "import socket, subprocess, platform"`
 
 #### Network tests fail
