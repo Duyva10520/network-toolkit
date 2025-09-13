@@ -1,0 +1,17 @@
+# Network Toolkit - No External Dependencies Required
+# 
+# This project uses 100% Python standard library modules:
+# - socket (network operations)
+# - subprocess (system commands)
+# - platform (OS detection)
+# - time (timing operations)
+# - threading (concurrent operations)
+# - concurrent.futures (thread pool)
+# - json (data serialization)
+# - sys (system operations)
+# - os (operating system interface)
+# - datetime (date/time operations)
+# - typing (type hints)
+#
+# No pip install needed - just run:
+# python network_toolkit.py
