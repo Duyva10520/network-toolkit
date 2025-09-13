@@ -1180,6 +1180,7 @@ class NetworkToolkit:
     def traceroute(self, target="8.8.8.8", max_hops=15):
         """Thực hiện traceroute đến target"""
         self.logger.log_start("traceroute", f"Traceroute đến {target} với max {max_hops} hops")
+        print("⏳ Traceroute có thể mất đến 2 phút để hoàn thành...")
         
         try:
             os_type = platform.system().lower()
@@ -1189,7 +1190,7 @@ class NetworkToolkit:
                 cmd = ["traceroute", "-m", str(max_hops), "-w", "3", target]
             
             start_time = time.time()
-            result = subprocess.run(cmd, capture_output=True, text=True, timeout=45)
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
             execution_time = time.time() - start_time
             
             traceroute_details = {
@@ -1216,8 +1217,8 @@ class NetworkToolkit:
                 return False
                 
         except subprocess.TimeoutExpired:
-            timeout_details = {'target': target, 'timeout_seconds': 45}
-            self.logger.log_error("traceroute", "Command timeout after 45 seconds", timeout_details)
+            timeout_details = {'target': target, 'timeout_seconds': 120}
+            self.logger.log_error("traceroute", "Command timeout after 2 minutes", timeout_details)
             print("❌ Traceroute timeout")
             return False
         except Exception as e:
@@ -1560,7 +1561,7 @@ def show_main_menu():
     print("   🚀 KIỂM TRA NHANH:")
     print("   1. Quick Test        - Kiểm tra nhanh (5 tests, ~30s)")
     print("   2. Full Test         - Kiểm tra đầy đủ (7 tests, ~2 phút)")
-    print("   3. Advanced Test     - Kiểm tra nâng cao (5 tests, ~5 phút)")
+    print("   3. Advanced Test     - Kiểm tra nâng cao (5 tests, ~7 phút)")
     print()
     print("   🔧 KIỂM TRA RIÊNG LẺ:")
     print("   4. DNS Test          - Kiểm tra DNS resolution")
@@ -1568,7 +1569,7 @@ def show_main_menu():
     print("   6. Port Scan         - Quét port trên host")
     print("   7. Network Scan      - Quét thiết bị trong LAN")
     print("   8. Bandwidth Test    - Kiểm tra băng thông")
-    print("   9. Traceroute        - Theo dõi đường đi gói tin")
+    print("   9. Traceroute        - Theo dõi đường đi gói tin (có thể mất 2 phút)")
     print("   10. Network Stats    - Thống kê mạng chi tiết")
     print()
     print("   📊 TIỆN ÍCH:")
