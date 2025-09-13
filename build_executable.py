@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 Build executable script for Network Toolkit
 Tạo file executable để dễ dàng distribute

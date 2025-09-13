@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 Network Toolkit - Công cụ kiểm tra mạng toàn diện
 Hợp nhất tất cả các tính năng thành một tool duy nhất với menu tùy chọn
