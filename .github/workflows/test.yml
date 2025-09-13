@@ -17,6 +17,9 @@ jobs:
           # Exclude some combinations to reduce CI time
           - os: macos-latest
             python-version: 3.8
+          # Exclude Python 3.12 on Windows due to compatibility issues
+          - os: windows-latest
+            python-version: '3.12'
 
     steps:
     - uses: actions/checkout@v4

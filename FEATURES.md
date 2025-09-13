@@ -155,7 +155,7 @@ Network Toolkit v1.0.0 cung cấp **14 interactive options** được tổ chứ
 
 ### Python Version Support
 - **Minimum**: Python 3.8+
-- **Tested**: Python 3.8, 3.9, 3.10, 3.11, 3.12
+- **Tested**: Python 3.8, 3.9, 3.10, 3.11, 3.12 (except 3.12 on Windows)
 - **Dependencies**: 100% standard library (no pip installs)
 
 ### Command Adaptation
